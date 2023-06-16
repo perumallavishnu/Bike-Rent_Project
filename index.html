@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+    </head>
+    <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: 'Roboto', sans-serif;
+            }
+            a:hover{
+                cursor: pointer;
+            }
+            nav{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 80px;
+                box-shadow: 0px 13px 20px rgb(62, 62, 62);
+                justify-content: space-between;
+                background-color: rgb(184, 183, 183);
+            }
+            nav ul{
+                display: flex;
+                align-items: center;
+            }
+            nav ul li{
+                display: flex;
+                margin-left: 30px;
+                font-size: 25px;
+            }
+            nav ul li a{
+                text-decoration: none;
+                color: black;
+                font-weight: 900;
+                transition: .5s;
+            }
+            nav ul li a:hover{
+                text-decoration: underline;
+            }
+            nav div img{
+                width: 60px;
+                height: 60px;
+                margin: 30px;
+            }
+            /* main page design */
+            main{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: rgba(203, 203, 203, 0.934);
+            }
+            main img{
+                margin-top: 100px;
+                width: 900px;
+            }
+            .dis-box{
+                width: 100%;
+                height: auto;
+                margin-left: 110px;
+                align-items: start;
+            }
+            .inputs{
+                display: flex;
+                width: 100%;
+                font-size: 12px;
+            }
+            .time{
+                margin-bottom: 30px;
+            }
+            .time p{
+                font-size: 23px;
+                margin-bottom: 10px;
+            }
+            .dis h1{
+                font-size: 47px;
+                letter-spacing: 3px;
+                word-spacing: 3px;
+                width: 100%;
+            }
+            .dis p{
+                color: rgb(57, 57, 57);
+                word-spacing: 1.5px;
+                margin-top: 20px;
+            }
+            .inputs input[type="date"]{
+                background: transparent;
+                padding: 15px;
+                width: 150px;
+                border: .5px solid gray;
+                font-family: 'Roboto', sans-serif;
+                font-size: 18px;
+                color: rgb(120, 120, 120);
+            }
+            .inputs input[type="time"]{
+                background: transparent;
+                padding: 15px;
+                width: 150px;
+                border: .5px solid gray;
+                font-family: 'Roboto', sans-serif;
+                font-size: 18px;
+                color: rgb(120, 120, 120);
+            }
+            .dis button{
+                width: 350px;
+                font-size: 20px;
+                padding: 12px 17px;
+                font-weight: 900;
+                background-color: rgb(214, 180, 8);
+                border: none;
+                border-radius: 5px;
+                margin-left: 1%;
+                transition: .5s;
+            }
+            .dis button:hover{
+                cursor: pointer;
+                background-color: rgb(184, 154, 7);
+            }
+    </style>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="rent.html">Rent</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li style=" border: none;
+                                margin-right: 40px;
+                                padding: 10px 17px;
+                                background-color: rgb(255, 217, 27);
+                                border-radius: 25px;
+                    "><a href="signin.html">Signup</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="dis-box">
+                <div class="dis">
+                    <h1>Discover the world on two Wheels!</h1>
+                    <p style="margin-bottom: 60px;
+                                font-size: 25px;
+                                width: 90%;
+                                letter-spacing: 2px;">
+                                Royal Bike Rental Services is now open, you can rent a bike at any time that you want
+                    </p>
+                    <div class="time">
+                        <p>Pickup</p>
+                        <div class="inputs">
+                            <input type="date" placeholder="Date">
+                            <input type="time">
+                        </div>
+                    </div>
+                    <div class="time" style="margin-bottom: 40px;">
+                        <p>Dropoff</p>
+                        <div class="inputs">
+                            <input type="date">
+                            <input type="time">
+                        </div>
+                    </div>
+                    <button>
+                        RENT NOW
+                    </button>
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/interceptor-img.png" alt="Main Image">
+            </div>
+        </main>
+    </body>
+</html>

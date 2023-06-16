@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Payment</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* font-family: 'Roboto', sans-serif; */
+            font-family: Arial, Helvetica, sans-serif;
+            overflow: hidden;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 80px;
+            justify-content: space-between;
+            background-color: rgb(184, 183, 183);
+        }
+        nav ul{
+            display: flex;
+            align-items: center;
+        }
+        nav ul li{
+            display: flex;
+            margin-left: 30px;
+            font-size: 25px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: black;
+            font-weight: 900;
+            transition: .5s;
+        }
+        nav ul li a:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        nav div img{
+            width: 60px;
+            height: 60px;
+            margin: 30px;
+        }
+        /* main page design */
+        main{
+            width: 100%;
+            height: 92vh;
+            background-color: rgba(203, 203, 203, 0.934);
+            /* border: 1px solid red; */
+        }
+        .main{
+            width: 100%;
+            height: 92vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* border: 1px solid red; */
+        }
+        .con{
+            width: 900px;
+            height: auto;
+            border: none;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            /* margin-left:20%; */
+            row-gap: 20px;
+        }
+        input{
+            font-size: 35px;
+            font-weight: 600;
+            padding: 20px 100px;
+            background-color: rgb(255, 217, 27);
+            border: none;
+            border-radius: 13px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            transition: .5s;
+        }
+        input:hover{
+            cursor: pointer;
+            background-color: rgb(211, 181, 26);
+            box-shadow: 0px 0px 10px gray;
+        }
+        input:active{
+            background-color:rgb(227, 195, 31);
+            box-shadow: 0px 0px 10px gray;
+        }
+        .heading{
+            font-size: 55px;
+            margin-top: 30px;
+        }
+        .con-p{
+            font-size: 30px;
+            font-weight: 100;
+            color: rgb(43, 43, 43);
+        }
+        .image img{
+            position: absolute;
+            bottom: -370px;
+            right: -250px;
+            border: none;    
+        }
+        .info{
+            width: 100%;
+            height: auto;
+            border: none;
+            margin-top: 10%;
+        }
+        .dis{
+            width: 600px;
+            height: auto;
+            border-left:3px solid black;
+            padding: 10px;
+            margin-left: 29%;
+        }
+        .dis h1{
+            font-size: 40px;
+        }
+        .dis p{
+            font-size: 25px;
+            font-weight: 100;
+            color: rgb(43, 43, 43);
+        }
+    </style>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="rent.html">Rent</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li style="border: none;
+                    margin-right: 40px;
+                    padding: 10px 17px;
+                    background-color: rgb(255, 217, 27);
+                    border-radius: 25px;
+                    align-items: center;"><a href="profile.html">Vishnu</a>
+                    <p style="width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                                background-color: gray;
+                                margin-left: 10px;"></p></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="main">
+                <div class="con">
+                    <i class='bx bx-check' style="color: black;
+                                            font-size: 70px;
+                                            width: 90px;
+                                            height: 90px;
+                                            background-color: green;
+                                            border-radius: 50%;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            border: 5px solid black;"></i>
+                    <h1 class="heading">Thank You</h1>
+                    <p class="con-p">You Can Pick the Vehicle at your Time of Booking</p>
+                    <input type="submit" value="HOME">
+                </div>
+                <div class="info">
+                    <div class="dis">
+                        <h1>RE Interceptor 650</h1>
+                        <p style="margin-top: 10px;">The Interceptor is a British motorcycle</p>
+                        <p>made by Royal Enfield between 1960 and 1970</p>
+                    </div>
+                    <div class="image">
+                        <img src="images/interceptor-img.png" alt="image">
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+    </body>
+</html>

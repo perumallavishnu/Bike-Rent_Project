@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bikes</title>
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        a:hover{
+            cursor: pointer;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 80px;
+            box-shadow: 0px 13px 20px rgb(62, 62, 62);
+            justify-content: space-between;
+            background-color: rgb(184, 183, 183);
+        }
+        nav ul{
+            display: flex;
+            align-items: center;
+        }
+        nav ul li{
+            display: flex;
+            margin-left: 30px;
+            font-size: 25px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: black;
+            font-weight: 900;
+            transition: .5s;
+        }
+        nav ul li a:hover{
+            text-decoration: underline;
+        }
+        nav div img{
+            width: 60px;
+            height: 60px;
+            margin: 30px;
+        }
+        /* main page design */
+        main{
+            width: 100%;
+            display: flex;
+            /* margin-top: 30px; */
+            background-color: rgba(203, 203, 203, 0.934);
+        }
+        .filters{
+            width: 20%;
+            height: 90vh;
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .filter{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            width: 200px;
+            height: 250px;
+            border: 2px solid black;
+        }
+        .promo{
+            width: 200px;
+            height: 500px;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .filter h1{
+            margin: 10px 20px;
+        }
+        .check{
+            font-weight: 600;
+            border: none;
+            font-size: 20px;
+            padding: 10px;
+        }
+        .check-box{
+            display: flex;
+            margin: 12px;
+        }
+        .check-box label{
+            margin-left: 10px;
+        }
+        /* cards design */
+        .card{
+            width: 350px;
+            height: 350px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 25px;
+            box-shadow: 5px 5px 5px gray;
+        }
+        .dis{
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 15px;
+        }
+        .book{
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 17px;
+            font-weight: 700;
+            margin-right: 0px;
+            margin-left: 15px;
+        }
+        .card img{
+            width: 280px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            object-fit: contain;
+            margin-left: 10px;
+            /* border: 1px solid red; */
+        }
+        .cards{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px 20px;
+        }
+        .info{
+            width: 100%;
+            border: none;
+            margin-top: 18px;
+        }
+        .book input:hover{
+            cursor: pointer;
+        }
+    </style>
+
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="rent.html">Rent</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li style=" border: none;
+                                margin-right: 40px;
+                                padding: 10px 17px;
+                                background-color: rgb(255, 217, 27);
+                                border-radius: 25px;
+                    "><a href="signin.html">Signup</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="filters">
+                <div class="filter">
+                    <h1>Filters</h1>
+                    <div class="check">
+                        <div class="check-box">
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="bike1">
+                            <label for="vehicle1">Scooty</label>
+                        </div>
+                        <div class="check-box">
+                            <input type="checkbox" id="vehicle2" name="vehicle2" value="bike2">
+                        <label for="vehicle2">Royal Enfield</label>
+                        </div>
+                        <div class="check-box">
+                            <input type="checkbox" id="vehicle3" name="vehicle3" value="bike3">
+                            <label for="vehicle3">Duke</label>  
+                        </div>
+                        <div class="check-box">
+                            <input type="checkbox" id="vehicle3" name="vehicle3" value="bike4">
+                            <label for="vehicle3">Favorites</label>
+                        </div>
+                    </div>   
+                </div>
+                <div class="promo"> 
+                    <h1>PROMO</h1>
+                </div>
+            </div>
+            <div class="bikes">
+                <div class="cards">
+                    <div class="card">
+                        <div class="img">
+                            <img src="images/access125_white 1.png" alt="access125_white">
+                        </div>
+                        <div class="info">
+                            <div class="dis">
+                                <p class="name">Access 125</p>
+                                <p class="amount">Rs.300</p>
+                            </div>
+                            <div class="book">
+                                <p class="avail">3 left</p>
+                                <p class="mileage">1h | 40 free KM</p>
+                                <input type="button" value="Book" style="border: none;
+                                                                        border-radius: 25px;
+                                                                        padding: 10px 17px;
+                                                                        font-weight: 900;
+                                                                        background-color: rgb(255, 217, 27);
+                                                                        transition: .5s;
+                                ">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img">
+                            <img src="images/suzuki_burgman 1.png" alt="Suzuki Burgman">
+                        </div>
+                        <div class="info">
+                            <div class="dis">
+                                <p class="name">Suzuki Burgman</p>
+                                <p class="amount">Rs.300</p>
+                            </div>
+                            <div class="book">
+                                <p class="avail">3 left</p>
+                                <p class="mileage">1h | 40 free KM</p>
+                                <input type="button" value="Book" style="border: none;
+                                                                        border-radius: 25px;
+                                                                        padding: 10px 17px;
+                                                                        font-weight: 900;
+                                                                        background-color: rgb(255, 217, 27);
+                                ">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img">
+                            <img src="images/ktm_390 1.png" alt="KTM 390">
+                        </div>
+                        <div class="info">
+                            <div class="dis">
+                                <p class="name">KTM 390</p>
+                                <p class="amount">Rs.450</p>
+                            </div>
+                            <div class="book">
+                                <p class="avail">3 left</p>
+                                <p class="mileage">1h | 40 free KM</p>
+                                <input type="button" value="Book" style="border: none;
+                                                                        border-radius: 25px;
+                                                                        padding: 10px 17px;
+                                                                        font-weight: 900;
+                                                                        background-color: rgb(255, 217, 27);
+                                ">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img">
+                            <img src="images/TVS_JUPITER 1.png" alt="TVS Jupiter">
+                        </div>
+                        <div class="info">
+                            <div class="dis">
+                                <p class="name">TVS Jupiter</p>
+                                <p class="amount">Rs.300</p>
+                            </div>
+                            <div class="book">
+                                <p class="avail">3 left</p>
+                                <p class="mileage">1h | 40 free KM</p>
+                                <input type="button" value="Book" style="border: none;
+                                                                        border-radius: 25px;
+                                                                        padding: 10px 17px;
+                                                                        font-weight: 900;
+                                                                        background-color: rgb(255, 217, 27);
+                                ">
+                            </div>
+                        </div>        
+                    </div>
+
+                    <div class="card">
+                        <div class="img">
+                            <img src="images/HONDA_AVIATOR 1.png" alt="Honda Aviator">
+                        </div>
+                        <div class="info">
+                            <div class="dis">
+                                <p class="name">Honda Aviator</p>
+                                <p class="amount">Rs.300</p>
+                            </div>
+                            <div class="book">
+                                <p class="avail">3 left</p>
+                                <p class="mileage">1h | 40 free KM</p>
+                                <input type="button" value="Book" style="border: none;
+                                                                        border-radius: 25px;
+                                                                        padding: 10px 17px;
+                                                                        font-weight: 900;
+                                                                        background-color: rgb(255, 217, 27);
+                                ">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img">
+                            <img src="images/access125_white 1.png" alt="access125_white">
+                        </div>
+                        <div class="info">
+                            <div class="dis">
+                                <p class="name">Access 125</p>
+                                <p class="amount">Rs.300</p>
+                            </div>
+                            <div class="book">
+                                <p class="avail">3 left</p>
+                                <p class="mileage">1h | 40 free KM</p>
+                                <input type="button" value="Book" style="border: none;
+                                                                        border-radius: 25px;
+                                                                        padding: 10px 17px;
+                                                                        font-weight: 900;
+                                                                        background-color: rgb(255, 217, 27);
+                                ">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
