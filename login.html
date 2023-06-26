@@ -13,17 +13,12 @@
     </head>
 
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            font-family: 'Roboto', sans-serif;
-        }
         /* login page design */
         main{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background-color: rgba(203, 203, 203, 0.934);
+            background-color: var(--bg-color);
         }
         main img{
             margin-top: 50px;
@@ -60,7 +55,7 @@
             width: 360px;
             font-size: 20px;
             font-weight: 900;
-            background-color: rgb(255, 217, 27);
+            background-color: var(--btn-color);
             border: none;
             padding: 12px 0 12px 0;
             border-radius: 5px;
@@ -69,7 +64,7 @@
         }
         .login button:hover{
             cursor: pointer;
-            background-color: rgb(184, 154, 7);
+            background-color: var(--btn-hover-color);
         }
         .login h2{
             margin-bottom: 30px;

@@ -1,0 +1,6 @@
+.book-btn{
+    border: none;
+    border-radius: 25px;                                                                    padding: 10px 17px;
+    font-weight: 900;
+    background-color:  var(--btn-color);
+}

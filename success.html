@@ -9,18 +9,12 @@
         <link rel="stylesheet" href="styles/nav.css">
     </head>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            /* font-family: 'Roboto', sans-serif; */
-            font-family: Arial, Helvetica, sans-serif;
-            overflow: hidden;
-        }
+        
         /* main page design */
         main{
             width: 100%;
             height: 92vh;
-            background-color: rgba(203, 203, 203, 0.934);
+            background-color: var(--bg-color);
             /* border: 1px solid red; */
         }
         .main{
@@ -46,7 +40,7 @@
             font-size: 35px;
             font-weight: 600;
             padding: 20px 100px;
-            background-color: rgb(255, 217, 27);
+            background-color: var(--btn-color);
             border: none;
             border-radius: 13px;
             margin-top: 20px;
@@ -55,11 +49,11 @@
         }
         input:hover{
             cursor: pointer;
-            background-color: rgb(211, 181, 26);
+            background-color: var(--btn-hover-color);
             box-shadow: 0px 0px 10px gray;
         }
         input:active{
-            background-color:rgb(227, 195, 31);
+            background-color:var(--btn-color);
             box-shadow: 0px 0px 10px gray;
         }
         .heading{
