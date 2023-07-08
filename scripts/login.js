@@ -1,19 +1,25 @@
-const login = document.getElementById('login');
-login.addEventListener('submit', function(e) {
-    e.preventDefault();
+function login() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
 
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
+    // Retrieve stored users from local storage
+    var users = JSON.parse(localStorage.getItem("users")) || [];
 
-    const storedUsername = localStorage.getItem('username');
-    const storedPassword = localStorage.getItem('password');
+    // Find the user in the array
+    var user = users.find(function(u) {
+        return u.username === username && u.password === password;
+    });
 
-    if (username === storedUsername && password === storedPassword) 
-    {
-            window.location.href = 'profile.html';
-    } 
-    else 
-    {
-        alert('Login failed!');
+    if (user) {
+      alert("Login successful!");
+
+      // Redirect to the sample page
+        window.location.href = "profile.html";
+    } else {
+        alert("Invalid username or password. Please try again.");
     }
-});
+
+    // Clear the input fields
+    document.getElementById("username").value = "";
+    document.getElementById("password").value = "";
+}

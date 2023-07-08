@@ -1,13 +1,26 @@
-const sign = document.getElementById('sign');
-    sign.addEventListener('submit', function(e) {
-        e.preventDefault();
+function signUp() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
 
-        const username = document.getElementById('username').value;
-        const password = document.getElementById('password').value;
+    // Retrieve stored users from local storage
+    var users = JSON.parse(localStorage.getItem("users")) || [];
 
-        localStorage.setItem('username', username);
-        localStorage.setItem('password', password);
+    // Create a new user object
+    var user = {
+        username: username,
+        password: password
+    };
 
-        alert('Sign up successful! Proceed to login.');
-        window.location.href = 'login.html';
-});
+    // Add the user object to the array
+    users.push(user);
+
+    // Store updated users array in local storage
+    localStorage.setItem("users", JSON.stringify(users));
+
+    // Clear the input fields
+    document.getElementById("username").value = "";
+    document.getElementById("password").value = "";
+
+    alert("Sign up successful! Please login.");
+    window.location.href = 'login.html';
+}
