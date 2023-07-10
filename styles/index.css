@@ -1,0 +1,73 @@
+/* main page design */
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-color);
+}
+main img{
+    margin-top: 100px;
+    width: 900px;
+}
+.dis-box{
+    width: 100%;
+    height: auto;
+    margin-left: 110px;
+    align-items: start;
+}
+.inputs{
+    display: flex;
+    width: 100%;
+    font-size: 12px;
+}
+.time{
+    margin-bottom: 30px;
+}
+.time p{
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+.dis h1{
+    font-size: 47px;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    width: 100%;
+}
+.dis p{
+    color: rgb(57, 57, 57);
+    word-spacing: 1.5px;
+    margin-top: 20px;
+}
+.inputs input[type="date"]{
+    background: transparent;
+    padding: 15px;
+    width: 150px;
+    border: .5px solid gray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: rgb(120, 120, 120);
+}
+.inputs input[type="time"]{
+    background: transparent;
+    padding: 15px;
+    width: 150px;
+    border: .5px solid gray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: rgb(120, 120, 120);
+}
+.dis button{
+    width: 350px;
+    font-size: 20px;
+    padding: 12px 17px;
+    font-weight: 900;
+    background-color: rgb(214, 180, 8);
+    border: none;
+    border-radius: 5px;
+    margin-left: 1%;
+    transition: .5s;
+}
+.dis button:hover{
+    cursor: pointer;
+    background-color: rgb(184, 154, 7);
+}
