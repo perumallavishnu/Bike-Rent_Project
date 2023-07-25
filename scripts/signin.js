@@ -12,7 +12,7 @@ function signUp() {
     var mobile = document.getElementById("mobile").value;
 
     if (!isValidPassword(password)) {
-        alert('Password must contain at least 8 characters, including at least one lowercase letter, one uppercase letter, one digit, and one special character.');
+        alert('Password must contain at least 8 characters, \nincluding at least one lowercase letter (a - z), \none uppercase letter (A - Z), \none digit (0 - 9), \nand one special character (@,#,&,etc).');
         return;
     }
     // Retrieve stored users from local storage
