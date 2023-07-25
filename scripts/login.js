@@ -11,9 +11,8 @@ function login() {
     });
 
     if (user) {
-      alert("Login successful!");
-
-      // Redirect to the sample page
+        alert("Login successful!");
+      // Redirect to the profile page
         window.location.href = "profile.html";
     } else {
         alert("Invalid username or password. Please try again.");

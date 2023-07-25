@@ -12,6 +12,13 @@ function signUp() {
         password: password,
         mobile: mobile
     };
+    // find the username is existed or not
+    for(const user of users){
+        if(user.username === username){
+            alert('Username already exists. Please choose different username.');
+            return;
+        }
+    }
 
     // Add the user object to the array
     users.push(user);
